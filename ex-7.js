@@ -42,7 +42,21 @@ let orders = [
 ];
 
 // Start coding here
-let isArray;
-let creditCardTypeOfBlindermann;
-let productQuantityOfJoannet;
-let totalPurchaseOfDary;
+let isArray = Array.isArray(orders);
+console.log(isArray)
+
+orders[2].creditCardType = "VISA";
+let creditCardTypeOfBlindermann = orders[2].creditCardType;
+console.log(creditCardTypeOfBlindermann)
+
+let productQuantityOfJoannet = orders[3].productQuantity;
+console.log(productQuantityOfJoannet);
+
+let totalPurchaseOfDary = (orders[0].productPrice * orders[0].productQuantity);
+console.log(totalPurchaseOfDary);
+
+
+
+
+// 7. แสดงผล Array 'orders' สุดท้าย
+console.log(orders);
